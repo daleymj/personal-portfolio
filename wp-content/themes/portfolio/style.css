@@ -1,0 +1,43 @@
+/*
+Theme Name: Portfolio
+Description: My personal profile theme
+Author: Matt Daley
+Version: 1.0
+License: General Public License
+*/
+
+body {
+  max-width: 60em;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+#header,
+#footer,
+#content,
+#sidebar {
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:600px) {
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  .nav li {
+    display: inline-block;
+  }
+  #content {
+    float: left;
+    width: 70%;
+  }
+  #sidebar {
+    float: right;
+    width: 30%;
+  }
+  #footer {
+    clear: both;
+  }
+}
