@@ -11,7 +11,9 @@ body {
   margin: 0 auto;
   font-family: sans-serif;
 }
-
+body a {
+  text-decoration: none;
+}
 #header,
 #footer,
 #content,
@@ -19,7 +21,9 @@ body {
   padding: 2%;
   box-sizing: border-box;
 }
-
+header h1.site-title a {
+  color: #2E3192;
+}
 @media screen and (min-width:600px) {
   ul,
   li {
