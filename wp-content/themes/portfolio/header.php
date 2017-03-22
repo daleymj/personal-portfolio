@@ -5,10 +5,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
     <?php wp_head(); //HOOK. required for the admin bar and plugins to work ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header role="banner" id="header">
+        <?php the_custom_logo(); ?>
         <h1 class="site-title"><a href="<?php echo home_url(); ?>">
-            <?php bloginfo('name'); ?> 
+            <?php bloginfo('name'); ?>
         </a></h1>
         <h2><?php bloginfo( 'description' ); ?></h2>
 

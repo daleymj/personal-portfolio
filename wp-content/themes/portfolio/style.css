@@ -21,8 +21,10 @@ body a {
   padding: 2%;
   box-sizing: border-box;
 }
-header h1.site-title a {
-  color: #2E3192;
+header h1.site-title {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 @media screen and (min-width:600px) {
   ul,
