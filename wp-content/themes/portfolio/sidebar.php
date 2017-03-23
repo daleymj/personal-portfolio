@@ -2,7 +2,7 @@
   <section id="categories" class="widget">
     <h3 class="widget-title"> Categories </h3>
     <ul>
-      <?php 
+      <?php
       //show the 15 most commonly used categories
       wp_list_categories( array(
         'title_li'    => '',
@@ -16,7 +16,7 @@
   <section id="archives" class="widget">
     <h3 class="widget-title"> Archives </h3>
     <ul>
-      <?php 
+      <?php
       //get yearly archives
       wp_get_archives( array(
         'type' => 'yearly',
