@@ -6,6 +6,9 @@ Version: 1.0
 License: General Public License
 */
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
   max-width: 60em;
   margin: 0 auto;
@@ -45,13 +48,13 @@ header h2 {
 .header-nav {
   max-width: 180px;
   margin: 0 auto;
-  background-color: rgba(40, 60, 129, .8);
+  background-color: rgba(0, 0, 0, .75);
 }
 .header-nav ul {
   padding: 0;
 }
 .header-nav ul li {
-  font-family: simplifiedArabic;
+  font-family: 'Roboto', sans-serif;
   font-size: 2em;
   list-style: none;
 }
@@ -62,6 +65,12 @@ header h2 {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
+}
+.search-field {
+  border-radius: 10px;
+}
+.search-submit {
+  border-radius: 10px;
 }
 
 /************************************* Media Querries **********************************/
@@ -90,16 +99,5 @@ header h2 {
 
 
 /************************************* Fonts **********************************/
-@font-face {
-    font-family: aclonica;
-    src: url(fonts/aclonica.tff);
-}
-@font-face {
-    font-family: simplifiedArabic;
-    src: url(fonts/simplifiedArabic.ttf);
-}
-@font-face {
-    font-family: simplifiedArabic;
-    src: url(fonts/simplifiedArabic-bold.ttf);
-    font-weight: bold;
-}
+font-family: 'Roboto', sans-serif;
+font-family: 'Passion One', cursive;
