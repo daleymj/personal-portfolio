@@ -48,6 +48,7 @@ header h2 {
 .header-nav {
   max-width: 180px;
   margin: 0 auto;
+  padding: 1em;
   background-color: rgba(0, 0, 0, .75);
 }
 .header-nav ul {
@@ -66,11 +67,22 @@ header h2 {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-.search-field {
-  border-radius: 10px;
+.search-field,
+.searchbutton {
+  margin: 0;
+  border:none;
+  outline:none;
+  padding: 2%;
+  font-size: 1em;
 }
-.search-submit {
-  border-radius: 10px;
+.search-field {
+  border-radius: 10px 0 0 10px;
+  width:80%;
+}
+.searchbutton {
+  width: 20%;
+  background: white;
+  border-radius: 0 10px 10px 0;
 }
 
 /************************************* Media Querries **********************************/
