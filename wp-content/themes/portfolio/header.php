@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php bloginfo( 'language' ); ?>">
+<html <?php language_attributes(); ?>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,8 @@
 </head>
 <body <?php body_class(); ?>>
 
+<div class="wrapper">
+	
 <header role="banner" id="header" style="background-image:url(<?php header_image(); ?>)">
 	<div class="header-logo">
 		<?php
@@ -43,4 +45,3 @@
 			<?php get_search_form(); ?>
 	</div>
 </header>
-<div class="wrapper">
