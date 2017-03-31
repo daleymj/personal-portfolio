@@ -28,18 +28,13 @@ body a {
 }
 .wrapper {
   flex: 1;
-}
-#header,
-#content,
-#sidebar {
-  padding: 2%;
-  box-sizing: border-box;
+  padding: 1.5em;
 }
 .header-logo {
   background-color: rgba(255, 255, 255, .75);
   max-width: 180px;
   max-height: 180px;
-  margin: 1em auto;
+  margin: 0 auto 1.5em auto;
 }
 a.custom-logo-link {
   padding: 1em;
@@ -62,7 +57,7 @@ header h2 {
 }
 .header-nav {
   max-width: 180px;
-  margin: 0 auto;
+  margin: 0 auto 1.5em auto;
   padding: 1em;
   background-color: rgba(255, 255, 255, .75);
 }
@@ -106,6 +101,28 @@ header h2 {
   color: white;
   border-radius: 0 10px 10px 0;
 }
+#content {
+  max-width: 340px;
+  background-color: rgba(255, 255, 255, .75);
+  margin: 0 auto;
+  padding: 1em;
+}
+#content h1 {
+  margin: 0;
+  text-align: center;
+}
+#content input,
+#content textarea {
+  background: transparent;
+}
+#content input::placeholder,
+#content textarea::placeholder {
+  color: black;
+}
+#content textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
 footer {
   width: 100%;
   height: 40px;
@@ -117,30 +134,29 @@ footer {
 /************************************* Media Querries **********************************/
 @media screen and (min-width:500px) {
   #header {
-    padding-left: 10em;
+    margin: 0 auto;
   }
   .header-logo {
-    margin: 2em 0;
-  }
-  .custom-logo-link {
-    text-align: left;
+    margin: 2em auto;
   }
   .header-nav {
-    margin: 0;
+    margin: 0 auto 2em auto;
   }
+
 }
 @media screen and (min-width:600px) {
+  #header {
+    max-width: 535px;
+  }
   .header-logo {
-    margin: 5em 0 3em 0;
-  }
-  #content {
     float: left;
-    width: 70%;
+    margin: 3em 3.6458em 3em 3.6458em;
   }
-  #sidebar {
-    float: right;
-    width: 30%;
+  .header-nav {
+    float: left;
+    margin: 3em 0 3em 0;
   }
+  #content,
   #footer {
     clear: both;
   }
