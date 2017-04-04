@@ -13,11 +13,42 @@
 				<?php the_title(); ?>
 			</a>
 		</h2>
+
+		<ul>
+			<?php $date = get_field('date');
+			if ($date) { ?>
+			<li><?php echo $date; ?></li>
+			<?php } ?>
+			<?php $client = get_field('client');
+			if ($client) { ?>
+			<li><?php echo $client; ?></li>
+			<?php } ?>
+			<?php $client = get_field('client');
+			if ($client) { ?>
+			<li><?php echo $client; ?></li>
+			<?php } ?>
+		</ul>
+
 		<?php the_post_thumbnail(); ?>
+
 		<div class="entry-content">
 			<?php the_content(); ?>
 		</div>
-		<?php echo get_post_meta($post->ID, 'link', true) ?>
+
+		<div class="tools">
+			<?php $tools = get_field('tools');
+			if ($tools) {
+				echo $tools;
+			}?>
+		</div>
+
+		<div class="link">
+			<?php $tools = get_field('link');
+			if ($link) { ?>
+				<a href="#"><?php echo $link; ?></a>
+			<?php } ?>
+		</div>
+
 	</article>
 	<!-- end post -->
 	<?php

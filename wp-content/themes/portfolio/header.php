@@ -3,7 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Passion+One|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/mjd.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
 
@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
 
 <div class="wrapper">
-	
+
 <header role="banner" id="header" style="background-image:url(<?php header_image(); ?>)">
 	<div class="header-logo">
 		<?php
