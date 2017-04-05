@@ -16,6 +16,8 @@ html {
   height: 100%;
 }
 body {
+  min-width: 299px;
+  max-width: 1000px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -104,10 +106,13 @@ header h2 {
   border-radius: 0 10px 10px 0;
 }
 #content {
-  max-width: 340px;
+  /*max-width: 441px;*/
   background-color: rgba(255, 255, 255, .55);
   margin: 0 auto;
-  padding: 1em;
+  padding: 1.5em;
+}
+.page #content {
+  max-width: 441px;
 }
 #content h1 {
   margin: 0;
@@ -115,8 +120,12 @@ header h2 {
   font-family: 'Acme', sans-serif;
   font-size: 3em;
 }
+#content .nf-form-fields-required {
+  margin-bottom: 1em;
+}
 #content input,
 #content textarea {
+  padding: .5em;
   background: transparent;
   border: dotted 1px black;
 }
@@ -197,7 +206,7 @@ footer {
   }
   #content {
     margin: 3em 3em 0 0;
-    max-width: 60%;
+    width: 60%;
     clear: none;
     float: right;
   }
