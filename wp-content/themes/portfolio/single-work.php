@@ -21,7 +21,7 @@
 			<?php } ?>
 			<?php $client = get_field('client');
 			if ($client) { ?>
-			<li><?php echo $client; ?></li>
+			<li class="worktype"><?php echo $client; ?></li>
 			<?php } ?>
 			<?php the_terms($post->ID, 'work-type', '<li>',', ','</li>') ?>
 		</ul>
@@ -51,6 +51,12 @@
 				<?php $color1 = get_field('color-1');
 				if ($color1) { ?>
 					<div class="color-chip" style="background: <?php echo $color1; ?>">blah</div>
+				<?php } ?>
+			</div>
+			<div class="color-2">
+				<?php $color2 = get_field('color-2');
+				if ($color2) { ?>
+					<div class="color-chip" style="background: <?php echo $color2; ?>">blah</div>
 				<?php } ?>
 			</div>
 		</div>

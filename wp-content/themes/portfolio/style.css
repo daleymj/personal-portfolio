@@ -27,6 +27,7 @@ body {
 }
 body a {
   text-decoration: none;
+  color: inherit;
 }
 .wrapper {
   flex: 1;
@@ -145,16 +146,36 @@ header h2 {
   font-family: inherit;
   font-size: inherit;
 }
-article img {
+article img,
+section img {
   max-width: 100%;
   height: auto;
 }
+section ul {
+  padding: 0;
+}
 footer {
   width: 100%;
-  height: 40px;
+  height: 50px;
   padding: .5em;
   text-align: center;
   background-color: rgba(255, 255, 255, .55);
+}
+footer small {
+  height: 2em;
+  margin-bottom: .5em;
+  display: inline;
+}
+footer ul {
+  display: inline;
+}
+footer ul li {
+  list-style: none;
+  padding: 0 0 0 1em;
+  display: inline;
+}
+footer img {
+  width: 34px;
 }
 
 /************************************* Media Querries **********************************/
