@@ -16,13 +16,10 @@ html {
   height: 100%;
 }
 body {
-  min-width: 299px;
-  max-width: 1000px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #254285;
-  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
 body a {
@@ -30,6 +27,10 @@ body a {
   color: inherit;
 }
 .wrapper {
+  min-width: 299px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
   flex: 1;
 }
 header {
@@ -107,16 +108,19 @@ header h2 {
   border-radius: 0 10px 10px 0;
 }
 #content {
-  /*max-width: 441px;*/
-  background-color: rgba(255, 255, 255, .55);
   margin: 0 auto;
   padding: 1.5em;
 }
 .page #content {
   max-width: 441px;
+  background-color: rgba(255, 255, 255, .55);
+}
+#content {
+  background-color: transparent;
 }
 #content h1 {
-  margin: 0;
+  background-color: rgba(255, 255, 255, .55);
+  margin-bottom: 1em;
   text-align: center;
   font-family: 'Acme', sans-serif;
   font-size: 3em;
@@ -146,10 +150,38 @@ header h2 {
   font-family: inherit;
   font-size: inherit;
 }
+div.work {
+  padding: 1em;
+  background-color: rgba(255, 255, 255, .55);
+  margin-bottom: 1.5em;
+}
+section,
+article {
+  height: 15em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 1em;
+}
 article img,
 section img {
   max-width: 100%;
   height: auto;
+}
+section h2,
+article h2 {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+section.fine-art {
+  background-image: url(images/fineart.png);
+}
+section.graphic-design {
+  background-image: url(images/graphic.png);
+}
+section.web {
+  background-image: url(images/web.png);
 }
 section ul {
   padding: 0;
@@ -162,9 +194,9 @@ footer {
   background-color: rgba(255, 255, 255, .55);
 }
 footer small {
-  height: 2em;
-  margin-bottom: .5em;
-  display: inline;
+  top: -10px;
+  position: relative;
+  display: inline-block;
 }
 footer ul {
   display: inline;
