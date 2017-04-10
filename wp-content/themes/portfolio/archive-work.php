@@ -13,7 +13,10 @@ get_header(); ?>
 
 	<?php
 	//Get all the brands that have products in them
-	$terms = get_terms( $taxonomy );
+	$terms = get_terms( array(
+		'taxonomy' => $taxonomy,
+		'order'    => 'DESC',
+	) );
 	?>
 
 

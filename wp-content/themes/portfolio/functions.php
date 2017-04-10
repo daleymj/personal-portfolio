@@ -128,6 +128,7 @@ add_action( 'widgets_init', 'platty_widget_areas' );
 */
 function platty_comments_reply() {
 	wp_enqueue_script('comment-reply');
+	wp_enqueue_script( 'smoothup', get_template_directory_uri() . '/js/smoothscroll.js', array( 'jquery' ), '',  true );
 }
 add_action('wp_enqueue_scripts', 'platty_comments_reply');
 
