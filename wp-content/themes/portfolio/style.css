@@ -23,6 +23,7 @@ body {
   background-color: #254285;
   font-family: 'Roboto', sans-serif;
   color: white;
+  margin: 0;
 }
 body a {
   text-decoration: none;

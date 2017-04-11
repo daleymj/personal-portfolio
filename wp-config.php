@@ -20,13 +20,21 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'mattdaley_portfolio');
 
-/** MySQL database username */
-define('DB_USER', 'mattdaley_portfolio');
 
-/** MySQL database password */
-define('DB_PASSWORD', 'ntHV3aNHHmqGUq4L');
+if($_SERVER['HTTP_HOST'] == 'localhost') {
+  define('DB_NAME', 'mattdaley_portfolio');
+  define('DB_USER', 'mattdaley_portfolio');
+  define('DB_PASSWORD', 'ntHV3aNHHmqGUq4L');
+}else {
+  define('DB_NAME', 'daleymj8_portfolio');
+  define('DB_USER', 'daleymj8_portfol');
+  define('DB_PASSWORD', 'o$)[ay6h~dvq');
+}
+
+
+
+
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
