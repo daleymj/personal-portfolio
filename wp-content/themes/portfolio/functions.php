@@ -181,6 +181,25 @@ function platty_size(){
 	<?php }//end if size
 }
 
+function contrast_color($hexcolor){
+	$r = hexdec(substr($hexcolor,0,2));
+	$g = hexdec(substr($hexcolor,2,2));
+	$b = hexdec(substr($hexcolor,4,2));
+	$yiq = (($r*299)+($g*587)+($b*114))/1000;
+	return ($yiq >= 128) ? 'black' : 'white';
+}
+
+add_filter('body_class','my_body_classes');
+function my_body_classes($c) {
+
+	is_front_page()       		? $c[] = 'home'       	: null;
+	is_page_template('your-template.php')	? $c[] = 'your-template-class'	: null;
+	is_404()        		? $c[] = 'error404'     	: null;
+        wp_is_mobile()        		? $c[] = 'mobile'     	: null;
+
+	return $c;
+}
+
 
 
 

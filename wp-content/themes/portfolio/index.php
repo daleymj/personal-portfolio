@@ -15,6 +15,7 @@
 		</h2>
 		<div class="entry-content">
 			<?php the_content(); ?>
+			<?php wp_link_pages(); ?>
 		</div>
 		<div class="postmeta">
 			<span class="author"> Posted by: <?php the_author(); ?> </span>
@@ -27,6 +28,8 @@
 		</div>
 		<!-- end postmeta -->
 	</article>
+
+	<?php comments_template(); ?>
 	<!-- end post -->
 	<?php
 		} //end while

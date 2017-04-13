@@ -17,8 +17,9 @@
 
 			<ul>
 				<?php $date = get_field('date');
+				$date = new DateTime($date);
 				if ($date) { ?>
-				<li><?php echo $date; ?></li>
+				<li><?php echo $date->format('M j Y'); ?></li>
 				<?php } ?>
 				<?php $client = get_field('client');
 				if ($client) { ?>
@@ -48,16 +49,41 @@
 			</div>
 
 			<div class="colors">
-				<div class="color-1">
+				<p>Colors Used</p>
+				<div class="color-1 color">
 					<?php $color1 = get_field('color-1');
 					if ($color1) { ?>
-						<div class="color-chip" style="background: <?php echo $color1; ?>">blah</div>
+						<div class="color-chip" style="background: <?php echo $color1; ?>;
+						color: <?php echo contrast_color($color1) ?>">
+							<?php echo $color1; ?>
+						</div>
 					<?php } ?>
 				</div>
-				<div class="color-2">
+				<div class="color-2 color">
 					<?php $color2 = get_field('color_2');
 					if ($color2) { ?>
-						<div class="color-chip" style="background: <?php echo $color2; ?>">blah</div>
+						<div class="color-chip" style="background: <?php echo $color2; ?>;
+						color: <?php echo contrast_color($color2) ?>">
+							<?php echo $color2; ?>
+						</div>
+					<?php } ?>
+				</div>
+				<div class="color-3 color">
+					<?php $color3 = get_field('color_3');
+					if ($color3) { ?>
+						<div class="color-chip" style="background: <?php echo $color3; ?>;
+						color: <?php echo contrast_color($color3) ?>">
+							<?php echo $color3; ?>
+						</div>
+					<?php } ?>
+				</div>
+				<div class="color-4 color">
+					<?php $color4 = get_field('color_4');
+					if ($color4) { ?>
+						<div class="color-chip" style="background: <?php echo $color4; ?>;
+						color: <?php echo contrast_color($color4) ?>">
+							<?php echo $color4; ?>
+						</div>
 					<?php } ?>
 				</div>
 			</div>
