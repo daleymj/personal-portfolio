@@ -15,7 +15,7 @@
 				</a>
 			</h2>
 
-			<ul>
+			<ul class="casestudy">
 				<?php $date = get_field('date');
 				$date = new DateTime($date);
 				if ($date) { ?>

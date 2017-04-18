@@ -36,8 +36,8 @@ body a {
 }
 .wrapper {
   min-width: 320px;
-  max-width: 1000px;
-  width: 100%;
+  max-width: 1500px;
+  width: 90%;
   margin: 0 auto;
   flex: 1;
 }
@@ -144,7 +144,7 @@ header h2 {
   color: white;
   margin-bottom: 1em;
   text-align: center;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Sanchez', serif;
   font-size: 3em;
 }
 .page #content h1 {
@@ -182,7 +182,7 @@ header h2 {
 #nf-field-4 {
   color: white;
 }
-#content ul {
+#content ul.casestudy {
  padding: 0;
  text-align: center;
 }
@@ -191,11 +191,15 @@ header h2 {
   display: inline;
   margin-right: 2em;
 }
-div.work, .type-work, .post {
+div.work,
+.archive .type-work,
+.post,
+.search article {
   padding: 1em;
   background-color: rgba(0, 0, 0, .7);
   margin-bottom: 1.5em;
 }
+.work-template-default .type-work
 figure {
   margin: 0;
 }
@@ -222,12 +226,13 @@ section img {
   text-align: center;
 }
 .blog h2,
-.category h2 {
+.category h2,
+.search h2 {
   position: static;
 }
 section h2,
 article h2 {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Sanchez', serif;
   position: absolute;
   bottom: 10px;
   right: 50px;
@@ -382,6 +387,9 @@ background: url('') no-repeat;
   #footer {
     clear: both;
   }
+  .home #content p {
+    font-size: 1.4em;
+  }
   aside {
     min-width: 230px;
   }
@@ -414,6 +422,9 @@ background: url('') no-repeat;
     max-width: none;
     margin-top: 12em;
   }
+  pre {
+    white-space: normal;
+  }
   aside {
     position: fixed;
     bottom: 0;
@@ -431,7 +442,7 @@ background: url('') no-repeat;
 
 /************************************* Fonts **********************************/
 /*font-family: 'Roboto', sans-serif;
-font-family: 'Acme', sans-serif;*/
+font-family: 'Sanchez', serif;*/
 
 /* =WordPress Core
 -------------------------------------------------------------- */
